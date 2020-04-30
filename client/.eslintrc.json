@@ -1,0 +1,25 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier", "node"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      {
+        "version": ">=6.0.0",
+        "ignores": ["modules", "destructuring"]
+      }
+    ],
+    "no-console": "warn"
+  },
+  "env": {
+    "es2020": true,
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  }
+}
